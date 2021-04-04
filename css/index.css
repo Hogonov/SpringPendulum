@@ -1,0 +1,67 @@
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.view {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid sienna;
+    border-radius: 6px;
+}
+
+.parameters {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid sienna;
+    border-radius: 6px;
+}
+
+.specifications {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid sienna;
+    border-radius: 6px;
+}
+.specifications > div {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.parameters > div{
+    margin: 10px;
+}
+.label {
+    font-size: 15px;
+}
+#pendulum{
+    border: 2px solid sienna;
+    border-radius: 6px;
+    float: left;
+}
+.btn {
+    margin-left: 20px;
+    background-color: sienna;
+}
+
+.btn:hover {
+    background-color: #ac807b;
+}
+
+.btn:focus {
+    background-color: #db1601;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: "number-input";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

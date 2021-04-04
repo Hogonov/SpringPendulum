@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div class="view">
+    <canvas id="pendulum" width="400" height="400"></canvas>
+    <button class="btn" onclick="clearInterval(timer); loop(this);">Play</button>
+</div>
+<div>
+    <div class="parameters">
+        <div>
+            <label for="mass">Введите значение массы: </label>
+            <input id="mass" type="number" onchange="changeHandler(this)">
+        </div>
+
+        <div>
+            <label for="springRate">Введите значение жесткости пружины: </label>
+            <input id="springRate" type="number" onchange="changeHandler(this)">
+        </div>
+
+        <div>
+            <label for="downwardDeviation">Введите значение отклонения пружины: </label>
+            <input id="downwardDeviation" type="number" onchange="changeHandler(this)">
+        </div>
+
+    </div>
+    <div class="specifications">
+        <div>
+            <div class="label">Циклическая частота собственных колебаний:</div>
+            <div id="frequency">0</div>
+        </div>
+        <div>
+            <div class="label">Время колебаний:</div>
+            <div id="oscillationTime">0</div>
+        </div>
+        <div>
+            <div class="label">Количество полных колебаний:</div>
+            <div id="numberVibrations">0</div>
+        </div>
+        <div>
+            <div class="label">Координата x:</div>
+            <div id="positionX">0</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
