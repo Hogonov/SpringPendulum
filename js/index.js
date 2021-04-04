@@ -89,11 +89,11 @@ const swingPendulum = () => {
     }
     oscillationTime.textContent = seconds
     numberVibrations.textContent = seconds / T
-    positionX.textContent =
+    positionX.textContent = y0 +
         parseFloat(downwardDeviation.value) * Math.cos((milliseconds / 1000) * parseFloat(frequency.textContent))
 
     ctx.clearRect(0, 0, canvas.width, canvas.height)
-    pendulum.y = parseFloat(positionX.textContent) + y0
+    pendulum.y = parseFloat(positionX.textContent)
     pendulum.draw()
     spring(pendulum.x, 0, pendulum.x, pendulum.y, color, pendulum.y / springCoil)
 }
