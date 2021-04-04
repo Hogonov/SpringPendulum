@@ -72,7 +72,7 @@ const loop = (button) => {
         T = Math.PI / parseFloat(frequency.textContent)
         timer = setInterval( () => {
             swingPendulum()
-        }, 100)
+        }, 10)
     } else {
         mass.disabled = false
         springRate.disabled = false
@@ -83,7 +83,7 @@ const loop = (button) => {
 
 
 const swingPendulum = () => {
-    milliseconds += 100
+    milliseconds += 10
     if (milliseconds % 1000 === 0){
         seconds += 1
     }
