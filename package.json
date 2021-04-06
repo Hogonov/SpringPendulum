@@ -1,0 +1,22 @@
+{
+  "name": "springpendulum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hogonov/SpringPendulum.git"
+  },
+  "author": "AlexTh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hogonov/SpringPendulum/issues"
+  },
+  "homepage": "https://github.com/Hogonov/SpringPendulum#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
